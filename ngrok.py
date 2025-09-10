@@ -1,12 +1,11 @@
 from pyngrok import ngrok
-import threading
-import os
-import time
+import threading, time, os
 
-def run():
-    os.system("streamlit run app.py")
+def run_streamlit():
+    os.system("streamlit run app.py --server.headless true --server.port 8501")
 
-threading.Thread(target=run).start()
+threading.Thread(target=run_streamlit).start()
 time.sleep(5)
-public_url = ngrok.connect(addr="8501")
-print(f"🔗 Your app is live: {public_url}")
+
+public_url = ngrok.connect(8501)
+print("🌐 PharmaPal is live at:", public_url)
