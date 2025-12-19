@@ -15,7 +15,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 llm = None
 embeddings = None
 if GOOGLE_API_KEY:
-    llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-pro", temperature=0.2, google_api_key=GOOGLE_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="models/gemini-1.5-pro", temperature=0.2, google_api_key=GOOGLE_API_KEY)
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
 
 # Fallback dummy embeddings if Gemini not available
