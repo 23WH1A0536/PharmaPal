@@ -1,4 +1,4 @@
-# 💊 PharmaPal – AI-Powered Prescription Refill & Medication Assistant
+# 💊 PharmaPal – An AI-Powered Prescription Refill & Medication Assistant
 
 PharmaPal is an **Agentic AI-powered healthcare chatbot** developed as a student project to simplify medication management. It helps users request prescription refills, set medication reminders, check prescription status, and access pharmacy-related information through an intelligent conversational interface.
 
